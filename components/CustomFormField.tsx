@@ -54,7 +54,13 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
               className="ml-2"
             />
           )}
-          <FormControl></FormControl>
+           <FormControl>
+            <Input
+              placeholder={props.placeholder}
+              {...field}
+              className="shad-input border-0"
+            />
+          </FormControl>
         </div>
       );
 
